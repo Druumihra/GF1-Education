@@ -1,0 +1,24 @@
+.example {
+    font-family: fantasy;
+
+}
+
+
+body {
+    margin: 20%;
+}
+
+
+h1 {
+    color: blue;
+}
+
+.test {
+    font-weight: 200;
+    color: aquamarine;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+}
