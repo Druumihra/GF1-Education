@@ -1,8 +1,28 @@
 .body{
-    background-color: paleturquoise;
+    background-image: linear-gradient(to right, pink, paleturquoise);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 #h1 {
-    color: aqua;
+    color: black;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 0.9rem;
+    margin: 0px;
+}
+    
+nav{
+    background-color: rgb(154, 154, 154, 0.150)  ;
+    padding: 1.2vh;
+    margin: 0;
+}
+
+a:hover {
+    background-color: rgb(154, 154, 154, 0.3);
+    width: 1.3rem;
+  }
