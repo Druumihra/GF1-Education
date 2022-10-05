@@ -5,15 +5,8 @@
     padding: 0;
 }
 
-#h1 {
+#h{
     color: black;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-    padding: 0.9rem;
-    margin: 0px;
 }
     
 nav{
@@ -22,7 +15,19 @@ nav{
     margin: 0;
 }
 
-a:hover {
+#navlink{
+    text-decoration: none;
+    color: black;
+    padding: 0.9rem;
+    margin: 0px;
+}
+
+#navlink:hover {
     background-color: rgb(154, 154, 154, 0.3);
     width: 1.3rem;
   }
+
+#para{
+    padding-left: 10%;
+    padding-right: 10%;
+}
