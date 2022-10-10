@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
-  </head>
-  <body onload="console.log(counter)">
-    <button onclick="click1()">click here</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styleGame.css">
+  <title>Game</title>
+</head>
+
+<body onload="console.log(counter)">
+
+  <nav class="nav">
+    <a id="navlink" href="../phami/indexPhami.html">Index Phami</a>
+    <a id="navlink" href="../clicker/game.html">Game</a>
+    <a id="navlink" href="https://www.google.dk">Navbar Link</a>
+  </nav>
+
+  <div class="game">
+    <button class="click" onclick="click1()">Click</button>
 
     <h2 id="counter">0</h2>
 
-    <button id="item1" onclick="buyitem1()">10</button>
-    <button id="item2" onclick="buyitem2()">125</button>
-    <button id="item3" onclick="buyitem3()">1500</button>
-    <button id="item4" onclick="buyitem4()">20000</button>    
-    <button id="item5" onclick="buyitem5()">100000</button>
+    <button id="item1" class="items" onclick="buyitem1()">10</button>
+    <button id="item2" class="items" onclick="buyitem2()">125</button>
+    <button id="item3" class="items" onclick="buyitem3()">1500</button>
+    <button id="item4" class="items" onclick="buyitem4()">20000</button>
+    <button id="item5" class="items" onclick="buyitem5()">100000</button>
+
     <script src="clicker.js"></script>
-  </body>
+  </div>
+
+</body>
+
 </html>
