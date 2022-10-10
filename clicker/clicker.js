@@ -5,8 +5,8 @@ let multiplier = 1;
 let item1 = { baseprice: 10, gen: 0.1, amount: 0 };
 let item2 = { baseprice: 125, gen: 4, amount: 0 };
 let item3 = { baseprice: 1500, gen: 50, amount: 0 };
-let item4 = { baseprice: 20000, gen: 125, amount: 0 };
-let item5 = { baseprice: 100000, gen: 250, amount: 0 };
+let item4 = { baseprice: 20000, gen: 100, amount: 0 };
+let item5 = { baseprice: 100000, gen: 200, amount: 0 };
 const counter = document.getElementById("counter");
 const item1btn = document.getElementById("item1");
 const item2btn = document.getElementById("item2");
@@ -16,7 +16,7 @@ const item5btn = document.getElementById("item5");
 
 var test = setInterval(() => {
   currency += passivegen * multiplier;
-  counter.innerHTML = currency.toFixed(2);
+  counter.innerHTML = currency.toFixed(1);
 }, 100);
 
 onbuy = () => {
@@ -30,7 +30,7 @@ onbuy = () => {
 
 click1 = () => {
   currency += clickpower * multiplier;
-  counter.innerHTML = currency.toFixed(2);
+  counter.innerHTML = currency.toFixed(1);
 };
 
 buyitem1 = () => {
@@ -38,7 +38,7 @@ buyitem1 = () => {
     item1.amount += 1;
     currency -= item1.baseprice;
     item1.baseprice = item1.baseprice * 1.5;
-    item1btn.innerHTML = item1.baseprice
+    item1btn.innerHTML = item1.baseprice;
     onbuy();
   }
 };
@@ -48,7 +48,7 @@ buyitem2 = () => {
     item2.amount += 1;
     currency -= item2.baseprice;
     item2.baseprice = item2.baseprice * 1.5;
-    item2btn.innerHTML = item2.baseprice
+    item2btn.innerHTML = item2.baseprice;
     onbuy();
   }
 };
@@ -58,7 +58,7 @@ buyitem3 = () => {
     item3.amount += 1;
     currency -= item3.baseprice;
     item3.baseprice = item3.baseprice * 1.5;
-    item3btn.innerHTML = item3.baseprice
+    item3btn.innerHTML = item3.baseprice;
     onbuy();
   }
 };
@@ -68,7 +68,7 @@ buyitem4 = () => {
     item4.amount += 1;
     currency -= item4.baseprice;
     item4.baseprice = item4.baseprice * 1.5;
-    item4btn.innerHTML = item4.baseprice
+    item4btn.innerHTML = item4.baseprice;
     onbuy();
   }
 };
@@ -78,7 +78,7 @@ buyitem5 = () => {
     item5.amount += 1;
     currency -= item5.baseprice;
     item5.baseprice = item5.baseprice * 1.5;
-    item5btn.innerHTML = item5.baseprice
+    item5btn.innerHTML = item5.baseprice;
     onbuy();
   }
 };
