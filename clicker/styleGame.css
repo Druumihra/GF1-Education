@@ -1,0 +1,84 @@
+body {
+    background-color: #0000ff4d;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav {
+    background-color: rgb(154, 154, 154, 0.150);
+    padding: 1.2vh;
+    margin: 0;
+}
+
+#navlink {
+    text-decoration: none;
+    color: black;
+    padding: 0.9rem;
+    margin: 0px;
+}
+
+#navlink:hover {
+    background-color: rgb(154, 154, 154, 0.3);
+    width: 1.3rem;
+}
+
+.game {
+    text-align: center;
+    padding: 150px 0;
+}
+
+#monsterPic {
+    height: 15%;
+    width: 15%;
+}
+
+.click {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #dbdb08;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.click:hover {
+    background-color: #b1b107
+}
+
+.click:active {
+    background-color: #b1b107;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.items {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #08DB72;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.items:hover {
+    background-color: #0ac367
+}
+
+.items:active {
+    background-color: #0ac367;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
