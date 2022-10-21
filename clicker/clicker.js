@@ -41,7 +41,7 @@ buyitem1 = () => {
     item1.amount += 1;
     currency -= item1.baseprice;
     item1.baseprice = item1.baseprice * 1.5;
-    item1btn.innerHTML = item1.baseprice;
+    item1btn.innerHTML = item1.baseprice.toFixed();
     onbuy();
   }
   monsterCheck();
@@ -52,7 +52,7 @@ buyitem2 = () => {
     item2.amount += 1;
     currency -= item2.baseprice;
     item2.baseprice = item2.baseprice * 1.5;
-    item2btn.innerHTML = item2.baseprice;
+    item2btn.innerHTML = item2.baseprice.toFixed();
     onbuy();
   }
   monsterCheck();
@@ -63,7 +63,7 @@ buyitem3 = () => {
     item3.amount += 1;
     currency -= item3.baseprice;
     item3.baseprice = item3.baseprice * 1.5;
-    item3btn.innerHTML = item3.baseprice;
+    item3btn.innerHTML = item3.baseprice.toFixed();
     onbuy();
   }
   monsterCheck();
@@ -74,7 +74,7 @@ buyitem4 = () => {
     item4.amount += 1;
     currency -= item4.baseprice;
     item4.baseprice = item4.baseprice * 1.5;
-    item4btn.innerHTML = item4.baseprice;
+    item4btn.innerHTML = item4.baseprice.toFixed();
     onbuy();
   }
   monsterCheck();
@@ -85,7 +85,7 @@ buyitem5 = () => {
     item5.amount += 1;
     currency -= item5.baseprice;
     item5.baseprice = item5.baseprice * 1.5;
-    item5btn.innerHTML = item5.baseprice;
+    item5btn.innerHTML = item5.baseprice.toFixed();
     onbuy();
   }
   monsterCheck();
