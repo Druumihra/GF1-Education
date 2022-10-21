@@ -25,7 +25,12 @@ nav {
 
 .game {
     text-align: center;
-    padding: 170px 0;
+    padding: 150px 0;
+}
+
+#monsterPic {
+    height: 15%;
+    width: 15%;
 }
 
 .click {
