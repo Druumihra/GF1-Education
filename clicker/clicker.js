@@ -3,10 +3,10 @@ let passivegen = 0;
 let clickpower = 1;
 let multiplier = 1;
 let item1 = { baseprice: 10, gen: 0.1, amount: 0 };
-let item2 = { baseprice: 125, gen: 4, amount: 0 };
-let item3 = { baseprice: 1500, gen: 50, amount: 0 };
-let item4 = { baseprice: 20000, gen: 100, amount: 0 };
-let item5 = { baseprice: 100000, gen: 500, amount: 0 };
+let item2 = { baseprice: 125, gen: 1, amount: 0 };
+let item3 = { baseprice: 1500, gen: 10, amount: 0 };
+let item4 = { baseprice: 20000, gen: 50, amount: 0 };
+let item5 = { baseprice: 100000, gen: 150, amount: 0 };
 const counter = document.getElementById("counter");
 const item1btn = document.getElementById("item1");
 const item2btn = document.getElementById("item2");
@@ -40,6 +40,7 @@ buyitem1 = () => {
   if (currency >= item1.baseprice) {
     item1.amount += 1;
     currency -= item1.baseprice;
+    counter.innerHTML = currency.toFixed(1);
     item1.baseprice = item1.baseprice * 1.5;
     item1btn.innerHTML = item1.baseprice.toFixed();
     onbuy();
@@ -51,6 +52,7 @@ buyitem2 = () => {
   if (currency >= item2.baseprice) {
     item2.amount += 1;
     currency -= item2.baseprice;
+    counter.innerHTML = currency.toFixed(1);
     item2.baseprice = item2.baseprice * 1.5;
     item2btn.innerHTML = item2.baseprice.toFixed();
     onbuy();
@@ -62,6 +64,7 @@ buyitem3 = () => {
   if (currency >= item3.baseprice) {
     item3.amount += 1;
     currency -= item3.baseprice;
+    counter.innerHTML = currency.toFixed(1);
     item3.baseprice = item3.baseprice * 1.5;
     item3btn.innerHTML = item3.baseprice.toFixed();
     onbuy();
@@ -73,6 +76,7 @@ buyitem4 = () => {
   if (currency >= item4.baseprice) {
     item4.amount += 1;
     currency -= item4.baseprice;
+    counter.innerHTML = currency.toFixed(1);
     item4.baseprice = item4.baseprice * 1.5;
     item4btn.innerHTML = item4.baseprice.toFixed();
     onbuy();
@@ -84,6 +88,7 @@ buyitem5 = () => {
   if (currency >= item5.baseprice) {
     item5.amount += 1;
     currency -= item5.baseprice;
+    counter.innerHTML = currency.toFixed(1);
     item5.baseprice = item5.baseprice * 1.5;
     item5btn.innerHTML = item5.baseprice.toFixed();
     onbuy();
@@ -91,34 +96,26 @@ buyitem5 = () => {
   monsterCheck();
 };
 
-
-monsterCheck = () =>{
-if (currency >= 10)
-  {
+monsterCheck = () => {
+  if (currency >= 10) {
     monsterPic.src = "../monsterPics/monster-UV.png";
   }
-  if (currency >= 50)
-  {
+  if (currency >= 50) {
     monsterPic.src = "../monsterPics/monster-monarch.png";
   }
-  if (currency >= 100)
-  {
+  if (currency >= 100) {
     monsterPic.src = "../monsterPics/monster-pp.png";
   }
-  if (currency >= 250)
-  {
+  if (currency >= 250) {
     monsterPic.src = "../monsterPics/monster-u.png";
   }
-  if (currency >= 500)
-  {
+  if (currency >= 500) {
     monsterPic.src = "../monsterPics/monster-khaotic.png";
   }
-  if (currency >= 1000)
-  {
+  if (currency >= 1000) {
     monsterPic.src = "../monsterPics/monster-ml.png";
   }
-  if (currency >= 2500)
-  {
+  if (currency >= 2500) {
     monsterPic.src = "../monsterPics/monster-pp2.png";
   }
 };
